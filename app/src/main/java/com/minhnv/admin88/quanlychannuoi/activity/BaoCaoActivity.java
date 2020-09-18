@@ -51,7 +51,6 @@ public class BaoCaoActivity extends AppCompatActivity {
         fab_baocao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 AlertDialog.Builder builder = new AlertDialog.Builder(BaoCaoActivity.this);
                 View v5 = getLayoutInflater().inflate(R.layout.dialog_baocao,null);
                 TextView textView12 = (TextView) v5.findViewById(R.id.textView12);

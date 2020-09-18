@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.minhnv.admin88.quanlychannuoi.R;
-import com.minhnv.admin88.quanlychannuoi.base.ChitietDanActivity;
+import com.minhnv.admin88.quanlychannuoi.activity.ChitietDanActivity;
 import com.minhnv.admin88.quanlychannuoi.interface1.OnitemDeleteDan;
 import com.minhnv.admin88.quanlychannuoi.model.Dan;
 import com.minhnv.admin88.quanlychannuoi.sqlite.DanDAO;

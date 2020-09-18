@@ -50,9 +50,9 @@
             android:screenOrientation="portrait"/>
         <activity android:name="com.minhnv.admin88.quanlychannuoi.activity.ThucAnActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name="com.minhnv.admin88.quanlychannuoi.base.ChiTietbenhActivity"
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.activity.ChiTietbenhActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name="com.minhnv.admin88.quanlychannuoi.base.ChitietDanActivity"
+        <activity android:name="com.minhnv.admin88.quanlychannuoi.activity.ChitietDanActivity"
             android:screenOrientation="portrait"></activity>
     </application>
 

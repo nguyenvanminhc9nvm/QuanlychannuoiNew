@@ -1,4 +1,4 @@
-package com.minhnv.admin88.quanlychannuoi.common;
+package com.minhnv.admin88.quanlychannuoi.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

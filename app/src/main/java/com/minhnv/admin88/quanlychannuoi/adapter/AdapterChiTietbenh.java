@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.minhnv.admin88.quanlychannuoi.base.ChiTietbenhActivity;
+import com.minhnv.admin88.quanlychannuoi.activity.ChiTietbenhActivity;
 import com.minhnv.admin88.quanlychannuoi.R;
 import com.minhnv.admin88.quanlychannuoi.model.ChitietBenh;
 

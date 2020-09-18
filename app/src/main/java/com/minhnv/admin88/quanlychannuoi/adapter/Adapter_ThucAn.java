@@ -16,13 +16,13 @@ import com.minhnv.admin88.quanlychannuoi.sqlite.ThucAnDAO;
 
 import java.util.List;
 
-public class Adapter_ThucAn extends RecyclerView.Adapter<Adapter_ThucAn.ViewHodel>{
+public class Adapter_ThucAn extends RecyclerView.Adapter<Adapter_ThucAn.ViewHodel> {
     private List<ThucAn> thucAns;
     private Context context;
     private OnitemDeleteDan onitemDeleteDan;
     private ThucAnDAO thucAnDAO;
 
-    public Adapter_ThucAn(List<ThucAn> thucAns, Context context,OnitemDeleteDan onitemDeleteDan) {
+    public Adapter_ThucAn(List<ThucAn> thucAns, Context context, OnitemDeleteDan onitemDeleteDan) {
         this.thucAns = thucAns;
         this.context = context;
         this.onitemDeleteDan = onitemDeleteDan;
@@ -32,16 +32,16 @@ public class Adapter_ThucAn extends RecyclerView.Adapter<Adapter_ThucAn.ViewHode
     @Override
     public ViewHodel onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View v3 = inflater.inflate(R.layout.item_thucan,parent,false);
-        return new ViewHodel(v3,onitemDeleteDan);
+        View v3 = inflater.inflate(R.layout.item_thucan, parent, false);
+        return new ViewHodel(v3, onitemDeleteDan);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHodel holder, final int position) {
         thucAnDAO = new ThucAnDAO(context);
-        holder.tvDongia.setText(thucAns.get(position).getmDongiathucan()+"");
+        holder.tvDongia.setText(thucAns.get(position).getmDongiathucan() + "");
         holder.tvDot.setText(thucAns.get(position).getmDot());
-        holder.tvSoluongthucan.setText(thucAns.get(position).getmSoluongthucan()+"");
+        holder.tvSoluongthucan.setText(thucAns.get(position).getmSoluongthucan() + "");
         holder.imgDeleteThucan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +60,7 @@ public class Adapter_ThucAn extends RecyclerView.Adapter<Adapter_ThucAn.ViewHode
         return thucAns.size();
     }
 
-    public static class ViewHodel extends RecyclerView.ViewHolder{
+    public static class ViewHodel extends RecyclerView.ViewHolder {
 
         public TextView tvDot;
         public TextView tvSoluongthucan;
@@ -68,7 +68,7 @@ public class Adapter_ThucAn extends RecyclerView.Adapter<Adapter_ThucAn.ViewHode
         public TextView tvTongchiphithucan;
         public ImageView imgDeleteThucan;
 
-        public ViewHodel(View itemView,OnitemDeleteDan onitemDeleteDan) {
+        public ViewHodel(View itemView, OnitemDeleteDan onitemDeleteDan) {
             super(itemView);
 
             tvDot = (TextView) itemView.findViewById(R.id.tv_dot);

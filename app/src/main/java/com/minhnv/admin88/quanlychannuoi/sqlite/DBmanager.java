@@ -13,6 +13,7 @@ public class DBmanager extends SQLiteOpenHelper {
     public static final String TABLE_USER = "NGUOIDUNG";
     public static final String TABLE_THUCAN = "THUCAN";
     public static final String ID = "ID";
+
     public DBmanager(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
@@ -60,12 +61,12 @@ public class DBmanager extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS "+TABLE_BAOCAO);
-        db.execSQL("DROP TABLE IF EXISTS "+TABLE_CATHE);
-        db.execSQL("DROP TABLE IF EXISTS "+TABLE_DAN);
-        db.execSQL("DROP TABLE IF EXISTS "+TABLE_HOADON);
-        db.execSQL("DROP TABLE IF EXISTS "+TABLE_THUCAN);
-        db.execSQL("DROP TABLE IF EXISTS "+TABLE_USER);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_BAOCAO);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_CATHE);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_DAN);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_HOADON);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_THUCAN);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_USER);
         onCreate(db);
     }
 }

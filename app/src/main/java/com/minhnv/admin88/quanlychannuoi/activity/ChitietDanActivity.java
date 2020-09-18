@@ -1,4 +1,4 @@
-package com.minhnv.admin88.quanlychannuoi.base;
+package com.minhnv.admin88.quanlychannuoi.activity;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -13,7 +13,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.minhnv.admin88.quanlychannuoi.R;
-import com.minhnv.admin88.quanlychannuoi.activity.CaTheActivity;
 import com.minhnv.admin88.quanlychannuoi.adapter.Adapter_Cathe;
 import com.minhnv.admin88.quanlychannuoi.adapter.Adapter_dan;
 import com.minhnv.admin88.quanlychannuoi.model.Cathe;

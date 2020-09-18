@@ -5,7 +5,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.minhnv.admin88.quanlychannuoi.common.Adapter_thilonsach_tablelayout;
+import com.minhnv.admin88.quanlychannuoi.adapter.Adapter_thilonsach_tablelayout;
 import com.minhnv.admin88.quanlychannuoi.R;
 
 public class ThitLonSachActivity extends AppCompatActivity {
